@@ -1,0 +1,16 @@
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Di dalam file CSS Anda */
+
+/* Wrapper untuk SearchBar */
+.search-bar {
+  display: flex;
+  justify-content: center; /* Untuk membuat konten di tengah secara horizontal */
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}

@@ -1,0 +1,71 @@
+/* Gaya dropdown */
+.custom-dropdown {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  /* text-align: left;
+  padding-left: 10px; */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Gaya tombol dropdown */
+.dropdown-button {
+  background-color: #4caf50;
+  color: #212121;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Gaya menu dropdown */
+#genre-menu {
+  min-width: 200px;
+}
+
+/* Gaya item dalam menu dropdown */
+#genre-menu .MuiMenuItem-root {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  transition: background-color 0.2s;
+}
+
+/* Warna latar belakang item genre saat hover */
+#genre-menu .MuiMenuItem-root:hover {
+  background-color: #f0f0f0;
+}
+
+/* Gaya item yang dipilih */
+.selected-genres {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Gaya chip (kategori yang dipilih) */
+.selected-genres .MuiChip-root {
+  margin: 2px;
+  /* background-color: #4caf50; */
+  color: #fff;
+  font-size: 14px;
+  border-radius: 15px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* Gaya ikon hapus pada chip (kategori yang dipilih) */
+.selected-genres .MuiChip-deleteIcon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Warna ikon hapus saat dihover */
+.selected-genres .MuiChip-deleteIcon:hover {
+  color: #f00;
+}

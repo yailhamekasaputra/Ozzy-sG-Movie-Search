@@ -1,0 +1,39 @@
+.carouselItem {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover; /* Menggunakan 'cover' untuk memotong gambar jika perlu */
+  border-radius: 10px;
+  margin: 5px;
+  overflow: hidden; /* Menyembunyikan konten yang melebihi batas */
+  transition: transform 0.3s ease; /* Animasi perubahan skala saat hover */
+  transform: scale(0.9); /* Mengurangi skala gambar saat hover */
+}
+
+.carouselItem:hover {
+  transform: scale(0.95); /* Mengurangi ukuran elemen saat hover */
+}
+
+.carouselItem__img {
+  max-height: 250px; /* Tinggi maksimum gambar */
+  object-fit: cover; /* Menggunakan 'cover' untuk memotong gambar jika perlu */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Efek bayangan dengan transparansi */
+  transition: transform 0.3s ease; /* Animasi perubahan skala saat hover */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.carouselItem__img:hover {
+  transform: scale(1.05); /* Membesarkan gambar saat hover */
+}
+
+.carouselItem__txt {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 834px) {
+  .carouselItem__img {
+    margin-top: 10px;
+    max-height: 200px;
+  }
+}

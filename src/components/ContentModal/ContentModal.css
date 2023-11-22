@@ -1,0 +1,383 @@
+/* ContentModal.css */
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.movie {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+}
+
+/* .movie__intro {
+  width: 80%;
+}
+
+.movie__backdrop {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0 1%;
+} */
+
+.movie__intro {
+  width: 80%;
+  position: relative;
+}
+
+.movie__backdrop {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0 1%;
+}
+
+.fade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* Sesuaikan tinggi overlay sesuai kebutuhan */
+  background: linear-gradient(transparent, rgb(0, 0, 0));
+}
+
+.movie__detail {
+  align-items: center;
+  width: 87%;
+  display: flex;
+  position: relative;
+  bottom: 29px;
+}
+
+.movie__detailLeft {
+  margin-right: 15px;
+}
+
+.movie__poster {
+  width: 300px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.movie__detailRightTop > div {
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: 0.6rem;
+}
+
+.movie__name {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 2.75rem;
+}
+
+.movie__voteCount {
+  margin-left: 1rem;
+}
+
+.movie__genres {
+  margin: 0.5rem 0;
+}
+
+.movie__genre {
+  background-color: #7b57ff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #5d3bbc;
+  font-size: 13px;
+  padding: 1px 7px; /* Tingkatkan padding untuk tampilan yang lebih baik */
+  border-radius: 20px;
+}
+
+.movie__genre:hover {
+  background-color: #5d3bbc; /* Warna latar belakang saat hover */
+  transition-duration: 0.2s;
+}
+
+.movie__rating {
+  font-size: 14px;
+}
+.movie__seasons {
+  font-size: 14px;
+}
+
+.movie__releaseDate {
+  font-size: 14px;
+}
+
+.movie__runtime {
+  font-size: 14px;
+}
+/* .movie__detailRightBottom {
+  margin: 2rem 0;
+  flex: 0.8;
+  position: relative;
+} */
+
+.movie__additionalInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.movie__rating {
+  display: flex;
+  align-items: center;
+  margin-right: 5px; /* Atur jarak antara ikon dan teks */
+}
+
+.movie__seasons,
+.movie__runtime,
+.movie__releaseDate {
+  display: flex;
+  align-items: center;
+  margin-right: 5px; /* Atur jarak antara ikon dan teks */
+}
+
+/* Gaya ikon (icon) */
+.movie__rating svg,
+.movie__seasons svg,
+.movie__runtime svg,
+.movie__releaseDate svg {
+  margin-right: 5px; /* Atur jarak antara ikon dan teks */
+}
+
+/* Styling ikon (icon) */
+.movie__rating svg {
+  width: 20px; /* Atur lebar ikon sesuai dengan preferensi Anda */
+  height: 20px; /* Atur tinggi ikon sesuai dengan preferensi Anda */
+  fill: rgb(255, 217, 0);
+}
+.movie__seasons svg,
+.movie__runtime svg,
+.movie__releaseDate svg {
+  width: 20px; /* Atur lebar ikon sesuai dengan preferensi Anda */
+  height: 20px; /* Atur tinggi ikon sesuai dengan preferensi Anda */
+  fill: #ffff; /* Atur warna ikon sesuai dengan preferensi Anda */
+}
+
+.movie__productionCompanies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie__productionCompany {
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.movie__productionCountries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.movie__productionCountry {
+  font-size: 14px;
+}
+
+.synopsisText {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.synopsisText > div:last-of-type {
+  margin-left: auto;
+}
+
+.watch-trailer-button {
+  max-width: 200px; /* Batasi lebar tombol */
+  white-space: nowrap; /* Hindari pemisahan kata dalam tombol */
+  overflow: hidden; /* Tampilkan ellipsis jika teks melebihi lebar tombol */
+  text-overflow: ellipsis;
+  background-color: #007bff; /* Warna latar belakang tombol (biru) */
+  color: #fff; /* Warna teks tombol (putih) */
+  border: none; /* Hapus border tombol */
+  border-radius: 5px; /* Membuat sudut tombol lebih lembut */
+  padding: 10px 20px; /* Ruang dalam tombol */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efek hover */
+}
+
+.watch-trailer-button:hover {
+  background-color: #0056b3; /* Warna latar belakang berubah saat dihover */
+}
+
+.button-container {
+  margin-top: auto; /* Atur margin antara tombol dan konten sekitarnya */
+}
+
+.productionText {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.productionText > div:last-of-type {
+  margin-left: auto;
+}
+
+.countryText {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.countryText > div:last-of-type {
+  margin-left: auto;
+}
+.movie__description {
+  max-height: 300px; /* Sesuaikan dengan tinggi yang diinginkan */
+  overflow-y: auto;
+  font-size: 15px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.carousel {
+  margin-top: 100px; /* Atur margin atas sesuai dengan kebutuhan */
+}
+
+.movie__links {
+  position: relative;
+  bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.movie__heading {
+  font-size: 2.2rem;
+}
+
+.movie__Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+}
+
+.newTab {
+  margin-left: 1.4rem;
+}
+
+/* Additional styles for the trailer button */
+.movie__trailer {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 3;
+}
+
+/* Media Query untuk Tampilan Mobile (max-width: 834px) */
+@media (max-width: 834px) {
+  /* Lebar layar kurang dari atau sama dengan 834px */
+
+  .movie__intro {
+    width: 100%;
+  }
+
+  .movie__backdrop {
+    height: 300px; /* Mengurangi tinggi gambar latar belakang untuk tampilan mobile */
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .movie__poster {
+    width: 0px; /* Mengurangi lebar poster untuk tampilan mobile */
+    margin-top: 10px; /* Mengatur margin atas poster untuk tampilan mobile */
+  }
+
+  .movie__genre {
+    background-color: #7b57ff;
+    color: #000000;
+    cursor: pointer;
+    border: 2px solid #5d3bbc;
+    font-size: 11px;
+    padding: 1px 7px; /* Tingkatkan padding untuk tampilan yang lebih baik */
+    border-radius: 20px;
+  }
+
+  .movie__genre:hover {
+    background-color: #5d3bbc; /* Warna latar belakang saat hover */
+    transition-duration: 0.2s;
+  }
+
+  /* Mengatur ulang tata letak teks untuk tampilan mobile */
+  .movie__detail {
+    flex-direction: column-reverse; /* Membalik arah tata letak */
+    text-align: justify; /* Mengatur teks menjadi tengah */
+    bottom: 10px;
+  }
+
+  .movie__name {
+    margin-top: 0px;
+    font-size: 25px;
+  }
+
+  .movie__detail {
+    width: 92%;
+  }
+
+  .movie__detailLeft {
+    margin-right: 0; /* Menghapus margin kanan pada elemen kiri */
+  }
+
+  /* Mengatur ulang teks rating, runtime, dan lainnya */
+  .movie__detailRightTop > div {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-container {
+    margin-top: auto; /* Atur margin antara tombol dan konten sekitarnya */
+    text-align: center; /* Pusatkan tombol pada tampilan mobile */
+  }
+
+  /* Sembunyikan tombol "Watch Trailer" pada tampilan mobile */
+  /* .movie__trailer {
+    display: none;
+  } */
+}

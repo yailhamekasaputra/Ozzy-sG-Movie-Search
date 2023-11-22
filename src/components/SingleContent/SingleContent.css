@@ -1,0 +1,116 @@
+/* CSS untuk konten media */
+.media {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 6px;
+  margin: 10px 0;
+  background-color: #363636;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  border-radius: 10px;
+  position: relative;
+  font-family: 'Neue', sans-serif;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.badge {
+  right: 19px; /* Jarak dari kanan card */
+  top: 4px;
+}
+/* Hover style untuk konten media */
+.media:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Responsif untuk layar berukuran kecil */
+@media (max-width: 550px) {
+  .media {
+    width: 47%;
+  }
+}
+
+/* Gambar poster */
+.poster {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Judul */
+.title {
+  width: 100%;
+  font-size: 15px;
+  padding: 8px 0;
+}
+
+/* Subtitle (untuk media_type dan date) */
+/* Untuk subtitle media_type (kiri) */
+.subTitle1 {
+  background-color: #7b57ff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #5d3bbc;
+  font-size: 10px;
+  padding: 2px 9px; /* Tingkatkan padding untuk tampilan yang lebih baik */
+  border-radius: 20px;
+}
+
+/* Untuk subtitle date (kanan) */
+.subTitle2 {
+  background-color: #7b57ff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #5d3bbc;
+  font-size: 10px;
+  padding: 2px 9px; /* Tingkatkan padding untuk tampilan yang lebih baik */
+  border-radius: 20px;
+}
+
+.subTitle3 {
+  background-color: #7b57ff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #5d3bbc;
+  font-size: 10px;
+  padding: 2px 9px; /* Tingkatkan padding untuk tampilan yang lebih baik */
+  border-radius: 20px;
+}
+.subTitle4 {
+  background-color: #7b57ff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid #5d3bbc;
+  font-size: 10px;
+  padding: 2px 9px; /* Tingkatkan padding untuk tampilan yang lebih baik */
+  border-radius: 20px;
+}
+
+/* Untuk mengelompokkan subtitle kiri dan kanan */
+.subTitle {
+  display: flex;
+  justify-content: center;
+  /* gap: 5px; */
+  align-items: center;
+  font-weight: 600;
+}
+.subTitle1:hover {
+  background-color: #5d3bbc; /* Warna latar belakang saat hover */
+  transition-duration: 0.2s;
+}
+
+.subTitle2:hover {
+  background-color: #5d3bbc; /* Warna latar belakang saat hover */
+  transition-duration: 0.2s;
+}
+.subTitle3:hover {
+  background-color: #5d3bbc; /* Warna latar belakang saat hover */
+  transition-duration: 0.2s;
+}
+.subTitle4:hover {
+  background-color: #5d3bbc; /* Warna latar belakang saat hover */
+  transition-duration: 0.2s;
+}

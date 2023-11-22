@@ -1,0 +1,117 @@
+/* Di dalam file SearchBar.css */
+
+/* Wrapper untuk SearchBar */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Input Search */
+.search-bar input {
+  border: 3px solid transparent;
+  width: 30rem;
+  height: 1rem;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+/* Style saat input focus */
+.search-bar input:hover,
+.search-bar input:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+/* Tombol Search */
+.search-button {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 1000px;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+/* Style saat hover pada tombol */
+.search-button:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.search-button:hover {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+/* Di dalam file CSS Anda */
+
+/* Wrapper untuk SearchBar */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Container untuk input dan tombol */
+.search-input-container {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px 0.1em 0.5em #1d1d1d;
+  background-color: #ffffff; /* Warna latar belakang container */
+  /* border: 1px solid #ccc; Garis tepi container */
+  border-radius: 50px; /* Border radius agar tampilan bulat */
+  padding: 7px 10px; /* Padding agar ada ruang di dalam container */
+}
+
+/* Input Search */
+.search-input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+/* Tombol Search */
+.search-button {
+  font-size: 16px;
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none;
+  border-radius: 50px; /* Border radius agar tampilan bulat */
+  padding: 7px 10px; /* Padding agar ada ruang di dalam tombol */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+/* Style saat hover pada tombol */
+.search-button:hover {
+  background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column; /* Membuat elemen berbaris menjadi satu kolom */
+    align-items: center; /* Aligment ke kiri */
+  }
+
+  input[type='text'] {
+    width: 100%; /* Lebar 100% agar mengisi lebar layar */
+  }
+}

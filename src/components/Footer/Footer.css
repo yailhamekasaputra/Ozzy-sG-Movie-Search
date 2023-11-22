@@ -1,0 +1,257 @@
+/* Footer Container */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-areas:
+    'info menu social' /* Area untuk bagian atas footer */
+    'bottom bottom bottom'; /* Area untuk footer-bottom */
+}
+
+.footerLogo {
+  grid-area: info; /* Menetapkan area pada infoText */
+  width: 30%;
+  padding-left: 50px;
+}
+
+/* CSS */
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  grid-area: bottom; /* Menetapkan area pada footer-bottom */
+  width: 100%;
+}
+
+/* Content Wrapper */
+.contentWrapper {
+  text-align: center;
+}
+
+/* Menu Items */
+.menuItems {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  padding-left: 100px;
+  padding-top: 72px;
+  text-align: left;
+  gap: 15px;
+  grid-area: menu; /* Menetapkan area pada menuItems */
+}
+
+.menuItems2 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Mengatur arah flex menjadi kolom */
+  padding-left: 300px;
+  padding-top: 72px;
+  text-align: left;
+  gap: 15px;
+  grid-area: menu; /* Menetapkan area pada menuItems */
+}
+
+/* Information Text */
+.infoText {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 50px;
+  padding-top: 70px;
+  opacity: 0.7;
+  max-width: 800px;
+  text-align: justify;
+  grid-area: info; /* Menetapkan area pada infoText */
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  grid-area: social; /* Menetapkan area pada socialIcons */
+}
+
+/* Social Icons - Individual */
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-size: 18px;
+}
+
+.icon:hover {
+  box-shadow: 0 0 8px #000000;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 50px;
+    grid-template-areas:
+      'info menu social' /* Area untuk bagian atas footer */
+      'bottom bottom bottom'; /* Area untuk footer-bottom */
+  }
+
+  .footerLogo {
+    grid-area: info; /* Menetapkan area pada infoText */
+    width: 50%;
+    padding-left: 50px;
+  }
+
+  /* Menu Items */
+  .menuItems {
+    list-style-type: none;
+    font-size: 10px;
+    display: flex;
+
+    padding-left: 8px;
+
+    gap: 15px;
+    grid-area: menu; /* Menetapkan area pada menuItems */
+  }
+
+  .menuItems2 {
+    list-style-type: none;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    padding-left: 80px;
+    text-align: left;
+    gap: 15px;
+    grid-area: menu; /* Menetapkan area pada menuItems */
+  }
+
+  /* Information Text */
+  .infoText {
+    font-size: 10px;
+    line-height: 1.5;
+    opacity: 0.7;
+    padding-left: 20px;
+    text-align: justify;
+    grid-area: info; /* Menetapkan area pada infoText */
+  }
+
+  /* Social Icons */
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-block-start: 190px;
+    padding-left: 0px;
+    grid-area: info; /* Menetapkan area pada socialIcons */
+  }
+
+  /* Social Icons - Individual */
+  .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    /* font-size: 18px; */
+  }
+
+  .icon:hover {
+    box-shadow: 0 0 8px #000000;
+    transform: scale(1.1);
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 50px;
+    grid-template-areas:
+      'info menu social' /* Area untuk bagian atas footer */
+      'bottom bottom bottom'; /* Area untuk footer-bottom */
+  }
+
+  .footerLogo {
+    grid-area: info; /* Menetapkan area pada infoText */
+    width: 40%;
+    padding-left: 30px;
+  }
+
+  /* Menu Items */
+  .menuItems {
+    list-style-type: none;
+    font-size: 10px;
+    display: flex;
+
+    padding-left: 1px;
+
+    gap: 15px;
+    grid-area: menu; /* Menetapkan area pada menuItems */
+  }
+
+  .menuItems2 {
+    list-style-type: none;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    padding-left: 60px;
+    text-align: left;
+    gap: 15px;
+    grid-area: menu; /* Menetapkan area pada menuItems */
+  }
+
+  /* Information Text */
+  .infoText {
+    font-size: 10px;
+    line-height: 1.5;
+    opacity: 0.7;
+    padding-left: 20px;
+    /* max-width: 800px; */
+    text-align: justify;
+    grid-area: info; /* Menetapkan area pada infoText */
+  }
+
+  /* Social Icons */
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-block-start: 185px;
+    padding-left: 0px;
+    grid-area: info; /* Menetapkan area pada socialIcons */
+  }
+
+  /* Social Icons - Individual */
+  .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    /* font-size: 18px; */
+  }
+
+  .icon:hover {
+    box-shadow: 0 0 8px #000000;
+    transform: scale(1.1);
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}

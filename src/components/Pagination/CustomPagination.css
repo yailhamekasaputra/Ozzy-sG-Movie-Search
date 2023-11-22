@@ -1,0 +1,26 @@
+/* CSS Untuk Pagination Lingkaran Tanpa Nomor */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-pagination > span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px; /* Ukuran lingkaran pagination (sesuaikan sesuai kebutuhan) */
+  height: 28px; /* Ukuran lingkaran pagination (sesuaikan sesuai kebutuhan) */
+  margin: 5px; /* Jarak antara setiap pagination item */
+  background-color: transparent; /* Hapus latar belakang default */
+  border-radius: 50%; /* Membuat lingkaran */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0; /* Menghilangkan teks */
+  overflow: hidden; /* Menghilangkan overflow dari teks */
+}
+
+.custom-pagination > span.active {
+  background-color: #006eff; /* Warna latar belakang saat aktif */
+  color: white; /* Warna teks saat aktif */
+}
