@@ -9,6 +9,7 @@ import Trending from './Pages/Trending/Trending';
 import About from './Pages/About/About';
 // import CustomPagination from './components/Pagination/CustomPagination';
 // import Container from '@mui/material/Container';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <Analytics />
     </BrowserRouter>
   );
 }
