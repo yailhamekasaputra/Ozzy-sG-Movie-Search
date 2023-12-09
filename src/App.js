@@ -10,6 +10,7 @@ import About from './Pages/About/About';
 // import CustomPagination from './components/Pagination/CustomPagination';
 // import Container from '@mui/material/Container';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </div>
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
