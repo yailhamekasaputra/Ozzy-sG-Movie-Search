@@ -51,7 +51,7 @@
 /* Untuk subtitle media_type (kiri) */
 .subTitle1 {
   background-color: #7b57ff;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   border: 2px solid #5d3bbc;
   font-size: 10px;
@@ -62,7 +62,7 @@
 /* Untuk subtitle date (kanan) */
 .subTitle2 {
   background-color: #7b57ff;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   border: 2px solid #5d3bbc;
   font-size: 10px;
@@ -72,7 +72,7 @@
 
 .subTitle3 {
   background-color: #7b57ff;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   border: 2px solid #5d3bbc;
   font-size: 10px;
@@ -81,7 +81,7 @@
 }
 .subTitle4 {
   background-color: #7b57ff;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   border: 2px solid #5d3bbc;
   font-size: 10px;
