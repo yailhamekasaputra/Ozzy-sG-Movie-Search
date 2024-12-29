@@ -98,7 +98,7 @@
 
 .movie__genre {
   background-color: #7b57ff;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   border: 2px solid #5d3bbc;
   font-size: 13px;
@@ -329,7 +329,7 @@
 
   .movie__genre {
     background-color: #7b57ff;
-    color: #000000;
+    color: #fff;
     cursor: pointer;
     border: 2px solid #5d3bbc;
     font-size: 11px;
